@@ -11,7 +11,16 @@ import * as api from "../../api/api_calls";
 export const getPosts = () => async (dispatch) => {
   try {
     const { data } = await api.fetchPosts();
-
+    // api
+    //   .fetchPosts()
+    //   .then((response) => {
+    //     console.log("response is" + response);
+    //     dispatch({ type: "FETCH_ALL", payload: response });
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+    console.log("response is" + data);
     dispatch({ type: "FETCH_ALL", payload: data });
   } catch (error) {
     console.log(error.message);

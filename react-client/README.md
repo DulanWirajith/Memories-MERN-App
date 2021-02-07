@@ -87,6 +87,8 @@ Redux is a predictable state container designed to help you write JavaScript app
 
 ### Redux Thunk => npm install redux-thunk
 
+Define ASYNC action creators
+
 Redux Thunk is a middleware that lets you call action creators that return a function instead of an action object. That function receives the store's dispatch method, which is then used to dispatch regular synchronous actions inside the function's body once the asynchronous operations have been completed.
 using for asynchrnous actions using redux
 
